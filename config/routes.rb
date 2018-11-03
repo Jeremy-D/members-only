@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 	
 
 	#users 
-	resources :users
+	resources :users, only: [:index]  
+
+	#posts 
+	resources :posts, only: [:index, :new, :create]
 
 end
