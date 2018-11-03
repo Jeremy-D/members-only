@@ -21,6 +21,10 @@ class User < ApplicationRecord
 		Digest::SHA1.hexdigest(string.to_s)
 	end
 
+	# Forgets a user.
+	def forget
+		update_attribute(:remember_digest, nil)
+	end
 
 	def remember
 		self.remember_token = User.new_token
