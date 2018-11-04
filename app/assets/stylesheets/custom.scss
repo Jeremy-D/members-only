@@ -28,6 +28,39 @@ header {
 	}
 }
 
+.page-content {
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	h3 {
+		background: #fff;
+		width:50%;
+		text-align: center;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border-left: 1px solid #9966ff;
+		border-right: 1px solid #9966ff;
+		border-top: 1px solid #9966ff;
+	}
+}
+
+.content-author-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width:50%;
+	border:1px solid #9966ff;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+/*.post-wrapper {
+	border: 1px solid #9966ff;
+	border-radius: 5px;
+}*/
 
 
 #nav-links {
