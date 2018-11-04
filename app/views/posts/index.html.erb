@@ -1,6 +1,12 @@
 <h1>all the posts</h1>
-<%= @posts.each do |p| %>
-
-	<h3><%= p.id.to_s + ' ' + p.title %></h3>
+<% @posts.each do |p| %>
+	<h3><%= p.title %></h3>
 	<p><%= p.content %></p>
-<% end %>
+	
+	<% if logged_in? %>
+		<p>Written by - <%= User.find_by(id: p.author_id.to_s).name %> </p>
+	<% end %>
+<% end %> 
+
+<br>
+<br>
